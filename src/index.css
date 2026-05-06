@@ -1,0 +1,49 @@
+:root {
+  color-scheme: light;
+  --text: #111827;
+  --page-bg: #f3f4f6;
+  --card-bg: #ffffff;
+  --input-bg: #ffffff;
+  --border: #d1d5db;
+  --muted-text: #6b7280;
+  --status-text: #4b5563;
+  --button-border: #111827;
+  --button-bg: #ffffff;
+  --button-text: #111827;
+  --button-primary-bg: #111827;
+  --button-primary-text: #ffffff;
+  --code-bg: #f9fafb;
+  --code-border: #e5e7eb;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --text: #e5e7eb;
+  --page-bg: #0f172a;
+  --card-bg: #111827;
+  --input-bg: #1f2937;
+  --border: #374151;
+  --muted-text: #9ca3af;
+  --status-text: #cbd5e1;
+  --button-border: #4b5563;
+  --button-bg: #1f2937;
+  --button-text: #e5e7eb;
+  --button-primary-bg: #e5e7eb;
+  --button-primary-text: #111827;
+  --code-bg: #0b1220;
+  --code-border: #334155;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--page-bg);
+  color: var(--text);
+}
+
+#root {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px;
+  box-sizing: border-box;
+}
