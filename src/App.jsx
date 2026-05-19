@@ -4,25 +4,30 @@ import './App.css'
 const SAVE_SCHEDULE_URL = import.meta.env.VITE_SAVE_SCHEDULE_URL ?? ''
 
 const HOME_HEALTH_LOCATIONS = [
-  'Plano/Rockwall',
-  'Fort Worth/Bridgeway',
-  'Gun Barrel City/Hillsboro',
-  'Tyler/Aiding',
-  'Nacogdoches Hh',
-  'Lufkin/Livingston Hh',
+  'Plano',
+  'Rockwall',
+  'Fort Worth',
+  'Bridgeway',
+  'Gun Barrel City',
+  'Hillsboro',
+  'Tyler',
+  'Aiding',
+  'Nacogdoches',
+  'Lufkin',
+  'Livingston',
   'El Paso',
 ]
 
 const HOSPICE_LOCATIONS = [
   'Plano',
-  'Denton (9DN/CDN)',
-  'Forth Worth',
-  'Houston (9WD)',
-  'San Antonio (9SA/CSA)',
-  'Teague (9TG)',
-  'Lufkin (9LF)',
-  'Tyler (9TY)',
-  'Bayou City (BCH)',
+  'Denton',
+  'Fort Worth',
+  'Houston',
+  'San Antonio',
+  'Teague',
+  'Lufkin',
+  'Tyler',
+  'Bayou City',
 ]
 
 const SERVICE_TYPES = ['Home Health', 'Hospice']
