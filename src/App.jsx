@@ -12,9 +12,7 @@ const HOME_HEALTH_LOCATIONS = [
   'Hillsboro',
   'Tyler',
   'Aiding',
-  'Nacogdoches',
-  'Lufkin',
-  'Livingston',
+  'Livingston, Lufkin, Nacogdoches',
   'El Paso',
 ]
 
