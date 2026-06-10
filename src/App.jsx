@@ -28,7 +28,18 @@ const HOSPICE_LOCATIONS = [
   'Bayou City',
 ]
 
-const SERVICE_TYPES = ['Home Health', 'Hospice']
+const BAYOU_LOCATIONS = ['Bayou']
+
+const PRESERVE_LOCATIONS = ['Preserve']
+
+const SERVICE_TYPES = ['Home Health', 'Hospice', 'Bayou', 'Preserve']
+
+const LOCATIONS_BY_SERVICE_TYPE = {
+  'Home Health': HOME_HEALTH_LOCATIONS,
+  Hospice: HOSPICE_LOCATIONS,
+  Bayou: BAYOU_LOCATIONS,
+  Preserve: PRESERVE_LOCATIONS,
+}
 
 function createEmptySchedule() {
   return {
@@ -59,8 +70,7 @@ function App() {
   }
 
   const onServiceTypeChange = (formId, nextServiceType) => {
-    const nextLocation =
-      nextServiceType === 'Home Health' ? HOME_HEALTH_LOCATIONS[0] : HOSPICE_LOCATIONS[0]
+    const nextLocation = LOCATIONS_BY_SERVICE_TYPE[nextServiceType]?.[0] ?? ''
     updateSchedule(formId, { serviceType: nextServiceType, location: nextLocation })
   }
 
@@ -142,8 +152,7 @@ function App() {
 
         <div className="schedule-list">
           {schedules.map((entry, index) => {
-            const locations =
-              entry.serviceType === 'Home Health' ? HOME_HEALTH_LOCATIONS : HOSPICE_LOCATIONS
+            const locations = LOCATIONS_BY_SERVICE_TYPE[entry.serviceType] ?? []
             return (
               <section key={entry.formId} className="schedule-item">
                 <h2>Schedule #{index + 1}</h2>
