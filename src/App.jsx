@@ -211,7 +211,7 @@ function App() {
                     onChange={(event) =>
                       updateSchedule(entry.formId, { onDuty: event.target.value })
                     }
-                    placeholder={'John Rey, LVN\nJane Rey, RN'}
+                    placeholder={'John Doe, LVN\nJane Doe, RN'}
                     disabled={loading}
                   />
                 </div>
